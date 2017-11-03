@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<input type="text" id="lol">
+<ul id="ulul">
+    <li class="lili">A</li>
+    <li class="lili">Al</li>
+    <li class="lili">Aaron</li>
+    <li class="lili">Arial</li>
+
+    <li class="lili">B</li>
+    <li class="lili">Boris</li>
+    <li class="lili">Billy</li>
+    <li class="lili">Bob</li>
+
+    <li class="lili">C</li>
+    <li class="lili">Cell</li>
+    <li class="lili">Ciri</li>
+    <li class="lili">Cara</li>
+</ul>
+<div id="prov">dasdasda</div>
+
+<script>
+
+    var inputt,filter,ul,li,i,prov;
+    var a = [];
+    inputt = document.getElementById("lol");
+    filter = inputt.value.toUpperCase();
+    ul = document.getElementById("ulul");
+    li=document.getElementsByClassName("lili");
+    prov =  document.getElementById("prov");
+
+    inputt.onkeyup = function() {
+    prov.innerHTML = inputt.value.toUpperCase();
+    for(i=0;i<li.length;i++){
+        if(li[i].innerHTML.toUpperCase().indexOf(inputt.value.toUpperCase()) > -1){
+            li[i].style.color="red";
+        }
+        else {
+            li[i].style.display="none";
+        };
+    }
+}
+
+
+</script>
+</body>
+</html>

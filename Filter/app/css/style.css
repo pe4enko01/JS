@@ -1,0 +1,16 @@
+img{
+  display: block;
+  margin:0 auto;
+  animation-duration: 1s;
+  height:500px;
+  width: 1000px;
+}
+#but{
+  animation-duration: 1s;
+}
+.im1{
+display: none;
+}
+.lol{
+  display: block;
+}

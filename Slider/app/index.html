@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="im1 lol">
+    <img src="img/iZpIsC.jpg" alt="">
+</div>
+
+<div class="im1">
+    <img src="img/gallery_34301_2009_301836.jpg" alt="">
+</div>
+<div class="im1">
+    <img src="img/color-abstract-wallpaper-22.jpg" alt="">
+
+</div>
+
+<button id="but">туда</button>
+<button id="but2">сюда</button>
+
+
+<script>
+    var but = document.getElementById("but");
+    var but2 = document.getElementById("but2");
+    var im1 = document.getElementsByClassName("im1");
+    var im2 = document.getElementById("im2");
+
+    var count = 0;
+
+     but.onclick = function(){
+        count +=1;
+         plusSlide()
+    };
+
+    but2.onclick = function(){
+        count -=1;
+        plusSlide()
+    };
+
+    plusSlide = function(){
+        if(count == im1.length){
+            count = 0;
+        };
+        if(count == -1){
+            count = im1.length-1;
+        };
+        for(var i = 0; i < im1.length; i++){
+            im1[i].style.display = "none";
+            if(i == count){
+                im1[i].style.display = "block";
+            }
+        };
+    };
+
+
+</script>
+</body>
+</html>

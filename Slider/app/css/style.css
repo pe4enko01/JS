@@ -1,0 +1,48 @@
+#all #tab1 {
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  display: inline-block; }
+
+#all #tab2 {
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  display: inline-block; }
+
+#all #tab3 {
+  border: 1px solid black;
+  width: 100px;
+  height: 50px;
+  display: inline-block; }
+
+#all #tabtable1 {
+  border: 1px solid black;
+  width: 400px;
+  height: 200px;
+  display: none; }
+
+#all #tabtable2 {
+  border: 1px solid black;
+  width: 400px;
+  height: 200px;
+  display: none; }
+
+#all #tabtable3 {
+  border: 1px solid black;
+  width: 400px;
+  height: 200px;
+  display: none; }
+img{
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+}
+.im1{
+  display: none;
+}
+.lol{
+  display: block;
+}
+

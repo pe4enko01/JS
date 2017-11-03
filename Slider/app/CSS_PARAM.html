@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<input type="range" id="r1" min="0" max="100" step="1" >
+<input type="range" id="r2" min="0" max="100" step="1" >
+<input type="range" id="r3" min="0" max="100" step="1" >
+<input type="range" id="r4" min="0" max="100" step="1" >
+<div id="block">
+
+</div>
+
+<script>
+
+
+        var ran1 = document.getElementById("r1");
+        var ran2 = document.getElementById("r2");
+        var ran3 = document.getElementById("r3");
+        var ran4 = document.getElementById("r4");
+
+
+
+        ran1.oninput = function(){
+           var ra1 = ran1.value;
+            bloc.style.borderRadius = ra1+"px";
+        }
+
+//        var r1 = ran1.value;
+//        var r2 = ran2.value;
+//        var r3 = ran3.value;
+//        var r4 = ran4.value;
+
+        var bloc = document.getElementById("block");
+
+
+
+        console.log(ra1);
+
+
+
+
+
+</script>
+</body>
+</html>
